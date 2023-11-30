@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wilson Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-----Nav----->
+      <nav>
+        <div class="logo">
+          <p>Wilson</p>
+        </div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <!-----Main----->
+      <main>
+        <img src="images/profile-pic.png" class="profile-pic" />
+        <div class="profile-info">
+          <p class="text-p1">Hello, I'm</p>
+          <h1 class="title">Wilson</h1>
+          <p class="text-p2">Frontend Developer</p>
+          <div class="socials-container">
+            <img src="images/github.png" onclick="location.href='https://github.com/codewilson64/'" />
+          </div>
+        </div>
+      </main>
+      <!-----About----->
+      <div id="about">
+        <h1 class="title">About Me</h1>
+        <div class="about-details-container">
+          <img src="images/about-pic.png" />
+          <div class="details-container">
+            <img src="images/experience.png" />
+            <h3>Experience</h3>
+            <p class="text-p1">
+              1 year <br />
+              Frontend Development
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-----Experience----->
+      <div id="experience">
+        <h1 class="title">Experience</h1>
+        <div class="exp-details-container">
+          <h2 class="exp-title">Frontend Developer</h2>
+          <div class="details-container">
+            <div>
+              <h3>HTML</h3>
+            </div>
+            <div>
+              <h3>CSS</h3>
+            </div>
+            <div>
+              <h3>Javascript</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-----Projects----->
+      <div id="projects">
+        <h1 class="title">My Projects</h1>
+        <div class="projects-details-container">
+          <div class="details-container">
+            <img src="images/project-1.png" />
+            <p>Project One</p>
+            <div class="btn-container">
+              <button class="btn">Github</button>
+              <button class="btn">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container">
+            <img src="images/project-2.png" />
+            <p>Project Two</p>
+            <div class="btn-container">
+              <button class="btn">Github</button>
+              <button class="btn">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container">
+            <img src="images/project-3.png" />
+            <p>Project three</p>
+            <div class="btn-container">
+              <button class="btn">Github</button>
+              <button class="btn">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-----Contact----->
+      <div id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+          <img src="images/email.png" alt="" />
+          <a href="#">wilsonnn948@gmail.com</a>
+        </div>
+      </div>
+      <!-----Footer----->
+      <footer>
+        <p>Copyright &#169; 2023 Wilson</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

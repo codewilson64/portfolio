@@ -1,0 +1,52 @@
+@media (max-width: 576px) {
+  main {
+    display: block;
+  }
+  main img {
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  #about .about-details-container img {
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  #about .about-details-container .details-container {
+    margin: 0 2rem;
+  }
+  .about-details-container {
+    display: block;
+  }
+  .exp-details-container {
+    width: 90%;
+  }
+  .projects-details-container {
+    display: block;
+  }
+  #projects .projects-details-container .details-container {
+    margin-bottom: 2rem;
+  }
+  .contact-container {
+    width: 100%;
+  }
+  nav ul {
+    position: absolute;
+    top: 89px;
+    right: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: 0.2s;
+  }
+  nav ul.active {
+    transform: translateX(0);
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+}
