@@ -30,7 +30,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(203, 209, 211);
   padding: 20px 0;
 }
 nav .logo {
