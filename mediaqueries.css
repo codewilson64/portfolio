@@ -1,3 +1,12 @@
+@media (max-width: 1150px) {
+  nav ul {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+}
+
 @media (max-width: 576px) {
   main {
     display: block;
@@ -21,8 +30,13 @@
   .exp-details-container {
     width: 90%;
   }
-  .projects-details-container {
+  .projects-container {
     display: block;
+    padding: 2rem;
+  }
+  .project {
+    width: 100%;
+    margin-bottom: 2rem;
   }
   #projects .projects-details-container .details-container {
     margin-bottom: 2rem;

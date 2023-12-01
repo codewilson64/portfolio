@@ -51,7 +51,7 @@ nav ul li a {
   position: relative;
 }
 nav ul li a:hover {
-  color: rgb(166, 165, 165);
+  color: rgb(62, 59, 59);
   transition: 0.2s;
 }
 nav ul li a:hover::after {
@@ -178,43 +178,46 @@ main {
   text-align: center;
   padding-bottom: 2rem;
 }
-.projects-details-container {
+.projects-container {
   display: flex;
-  padding: 0 3rem;
-  gap: 1rem;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 1000px;
+  margin: 50px auto;
 }
-#projects .projects-details-container .details-container {
-  border: 1px solid gray;
-  border-radius: 2rem;
+.project {
+  width: 30%;
   padding: 2rem;
+  box-sizing: border-box;
+  background: rgb(250, 250, 250);
 }
-.projects-details-container div img {
-  width: 100%;
-  border-radius: 1.5rem;
+.project h4 {
+  font-size: 2rem;
 }
-.projects-details-container div p {
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-.btn-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  gap: 1.5rem;
-  padding: 1rem;
-}
-.btn-container .btn {
-  width: 120px;
-  height: 50px;
-  border-radius: 4rem;
-  color: #000;
-  background-color: white;
-  font-size: 0.9rem;
-  font-weight: 600;
+.project.one,
+.project.two,
+.project.three {
   border: 1px solid gray;
+}
+.project-img {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  color: rgb(62, 59, 59);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border: none;
+  background: transparent;
   cursor: pointer;
 }
+.btn:hover {
+  color: black;
+  transition: 0.2s;
+}
+
 /* Contact */
 #contact {
   grid-area: contact;
