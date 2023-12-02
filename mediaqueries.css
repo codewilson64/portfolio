@@ -1,13 +1,5 @@
-@media (max-width: 1150px) {
-  nav ul {
-    display: none;
-  }
-  .hamburger-menu {
-    display: flex;
-  }
-}
-
 @media (max-width: 576px) {
+  /* Main */
   main {
     display: block;
   }
@@ -16,20 +8,31 @@
     margin: auto;
     margin-bottom: 2rem;
   }
+  .socials-container {
+    margin: auto;
+    width: 50%;
+  }
+  .socials-container img {
+    margin: 5px 0;
+  }
+  /* About */
   #about .about-details-container img {
     display: block;
     margin: auto;
     margin-bottom: 2rem;
   }
-  #about .about-details-container .details-container {
-    margin: 0 2rem;
+  #about .about-details-container .details-container-1 {
+    margin-left: 6rem;
   }
   .about-details-container {
     display: block;
   }
+
+  /* Experience */
   .exp-details-container {
     width: 90%;
   }
+  /* Projects */
   .projects-container {
     display: block;
     padding: 2rem;
@@ -44,6 +47,7 @@
   .contact-container {
     width: 100%;
   }
+  /* Nav */
   nav ul {
     position: absolute;
     top: 89px;

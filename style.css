@@ -87,6 +87,8 @@ main {
 }
 .profile-pic {
   width: 400px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .profile-info {
   display: flex;
@@ -105,7 +107,27 @@ main {
 .profile-info .text-p2 {
   font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 1rem;
   color: rgb(85, 85, 85);
+}
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.socials-container button {
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 4rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.socials-container button:hover {
+  background-color: #000;
+  color: #fff;
 }
 .socials-container img {
   width: 2.2rem;
@@ -130,15 +152,22 @@ main {
   width: 400px;
   border-radius: 2rem;
 }
-#about .about-details-container .details-container {
-  align-self: flex-start;
+#about .about-details-container .details-container-2 {
+  width: 300px;
   text-align: center;
   padding: 2rem;
+  margin-bottom: 2rem;
   border-radius: 2rem;
   border: 1px solid gray;
 }
-.details-container img {
+.details-container-2 img {
   width: 2rem;
+}
+.text-p1 {
+  margin-top: 1rem;
+}
+.text-container {
+  width: 300px;
 }
 /* Experience */
 #experience {
@@ -176,14 +205,13 @@ main {
 #projects .title {
   font-size: 3rem;
   text-align: center;
-  padding-bottom: 2rem;
 }
 .projects-container {
   display: flex;
   justify-content: space-between;
   text-align: center;
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 .project {
   width: 30%;
