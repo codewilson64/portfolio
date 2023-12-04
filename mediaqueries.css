@@ -1,5 +1,8 @@
 @media (max-width: 576px) {
   /* Main */
+  body {
+    overflow-x: hidden;
+  }
   main {
     display: block;
   }
@@ -59,19 +62,21 @@
   /* Nav */
   nav ul {
     position: absolute;
+    width: 90%;
+    max-width: 350px;
     top: 89px;
     right: 0;
     flex-direction: column;
     justify-content: space-around;
     height: 50vh;
     background-color: #fff;
-    text-align: center;
+    align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transform: translateX(150%);
+    display: none;
     transition: 0.2s;
   }
   nav ul.active {
-    transform: translateX(0);
+    display: flex;
   }
   .hamburger-menu {
     display: flex;
