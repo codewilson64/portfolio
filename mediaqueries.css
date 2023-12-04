@@ -22,10 +22,19 @@
     margin-bottom: 2rem;
   }
   #about .about-details-container .details-container-1 {
-    margin-left: 6rem;
+    width: 80%;
+    margin: auto;
+  }
+  #about .about-details-container .details-container-1 .details-container-2 {
+    margin: auto;
   }
   .about-details-container {
     display: block;
+  }
+  .text-container {
+    width: fit-content;
+    text-align: center;
+    margin-top: 2rem;
   }
 
   /* Experience */
