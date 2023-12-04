@@ -35,6 +35,7 @@ nav {
 }
 nav .logo {
   font-size: 2rem;
+  font-weight: 600;
 }
 nav ul {
   display: flex;
@@ -51,7 +52,7 @@ nav ul li a {
   position: relative;
 }
 nav ul li a:hover {
-  color: rgb(62, 59, 59);
+  color: rgb(86, 82, 82);
   transition: 0.2s;
 }
 nav ul li a:hover::after {

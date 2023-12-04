@@ -2,10 +2,23 @@
   nav ul {
     width: 50%;
   }
+  .contact-container {
+    padding: 1.6rem;
+  }
+  .contact-container a {
+    font-size: 1.1rem;
+  }
 }
 @media (max-width: 900px) {
   nav ul {
     width: 60%;
+  }
+  .contact-container {
+    padding: 1.6rem;
+    width: 60%;
+  }
+  .contact-container a {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 815px) {
@@ -68,7 +81,7 @@
     margin-bottom: 2rem;
   }
   .contact-container {
-    width: 100%;
+    width: 60%;
   }
   /* Nav */
   nav ul {
