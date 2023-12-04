@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   /* Main */
   main {
     display: block;
@@ -58,7 +58,7 @@
     background-color: #fff;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition: 0.2s;
   }
   nav ul.active {
