@@ -88,7 +88,7 @@
     position: absolute;
     width: 50%;
     max-width: 400px;
-    top: 89px;
+    top: 84px;
     right: 0;
     flex-direction: column;
     justify-content: space-around;
@@ -96,11 +96,12 @@
     background-color: #fff;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: none;
+    transform: scaleY(0);
+    transform-origin: top;
     transition: 0.2s;
   }
   nav ul.active {
-    display: flex;
+    transform: scaleY(1);
   }
   .hamburger-menu {
     display: flex;
