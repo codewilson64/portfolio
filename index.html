@@ -6,6 +6,8 @@
     <title>Wilson Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <!--BoxIcons-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
@@ -84,20 +86,26 @@
           <div class="project one">
             <h4>Project 1</h4>
             <img src="images/mycoffee-img.png" class="project-img" />
-            <button class="btn" onclick="location.href='https://github.com/codewilson64/my-coffee'">Github</button>
-            <button class="btn" onclick="location.href='https://codewilson64.github.io/my-coffee/'">Live Demo</button>
+            <div class="btn-container">
+              <button class="btn" onclick="location.href='https://github.com/codewilson64/my-coffee'">Github</button>
+              <button class="btn" onclick="location.href='https://codewilson64.github.io/my-coffee/'">Live Demo</button>
+            </div>
           </div>
           <div class="project two">
             <h4>Project 2</h4>
             <img src="images/socialbook-img.png" class="project-img" />
-            <button class="btn" onclick="location.href='https://github.com/codewilson64/socialbook-website'">Github</button>
-            <button class="btn" onclick="location.href='https://codewilson64.github.io/socialbook-website'">Live Demo</button>
+            <div class="btn-container">
+              <button class="btn" onclick="location.href='https://github.com/codewilson64/socialbook-website'">Github</button>
+              <button class="btn" onclick="location.href='https://codewilson64.github.io/socialbook-website'">Live Demo</button>
+            </div>
           </div>
           <div class="project three">
             <h4>Project 3</h4>
             <img src="images/gogoanime-img.png" class="project-img" />
-            <button class="btn" onclick="location.href='https://github.com/codewilson64/gogoanime-website'">Github</button>
-            <button class="btn" onclick="location.href='https://codewilson64.github.io/gogoanime-website'">Live Demo</button>
+            <div class="btn-container">
+              <button class="btn" onclick="location.href='https://github.com/codewilson64/gogoanime'">Github</button>
+              <button class="btn" onclick="location.href='https://codewilson64.github.io/gogoanime'">Live Demo</button>
+            </div>
           </div>
         </div>
       </div>
@@ -112,6 +120,8 @@
       <!-----Footer----->
       <footer>
         <p>Copyright &#169; 2023 Wilson</p>
+        <a href="#" id="top-btn">Back to Top</a>
+        <a href="#"><i class="bx bxs-chevrons-up top-btn"></i></a>
       </footer>
     </div>
     <script src="script.js"></script>

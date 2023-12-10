@@ -211,31 +211,32 @@ main {
   font-size: 3rem;
   text-align: center;
 }
+
 .projects-container {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  max-width: 1000px;
-  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 2rem;
 }
 .project {
-  width: 30%;
   padding: 2rem;
   box-sizing: border-box;
+  border: 1px solid gray;
   background: rgb(250, 250, 250);
 }
 .project h4 {
+  text-align: center;
   font-size: 2rem;
-}
-.project.one,
-.project.two,
-.project.three {
-  border: 1px solid gray;
 }
 .project-img {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn {
   color: rgb(62, 59, 59);
@@ -283,7 +284,20 @@ main {
 footer {
   grid-area: footer;
   padding: 3rem;
+  position: relative;
 }
 footer p {
   text-align: center;
+}
+footer a {
+  position: absolute;
+  right: 4rem;
+  bottom: 2.8rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+footer .top-btn {
+  display: none;
 }
