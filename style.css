@@ -4,12 +4,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --body-color: #fff;
+  --bg-color: #fdfbfb;
+  --nav-color: #3e4f69;
+  --p-color: #5b5b5b;
+  --h-color: #000;
+  --github-color: #fff;
+}
+.dark-theme {
+  --body-color: #242424;
+  --bg-color: #3a3a3a;
+  --p-color: #fff;
+  --h-color: #fff;
+  --github-color: #c2c1c1;
+}
 html {
   scroll-behavior: smooth;
 }
 body,
 button {
   font-family: "Nunito", sans-serif;
+  background-color: var(--body-color);
   overflow-x: hidden;
 }
 .container {
@@ -31,12 +47,16 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(203, 209, 211);
+  background-color: var(--nav-color);
   padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-nav .logo {
+nav .logo p {
   font-size: 2rem;
   font-weight: 600;
+  color: #fff;
 }
 nav ul {
   display: flex;
@@ -48,12 +68,12 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 1.4rem;
   position: relative;
 }
 nav ul li a:hover {
-  color: rgb(86, 82, 82);
+  color: #fff;
   transition: 0.2s;
 }
 nav ul li a:hover::after {
@@ -63,7 +83,7 @@ nav ul li a:hover::after {
   height: 1.8px;
   left: 0;
   bottom: -10px;
-  background-color: rgb(166, 165, 165);
+  background-color: #fff;
 }
 .hamburger-menu {
   display: flex;
@@ -79,13 +99,37 @@ nav ul li a:hover::after {
   width: 30px;
   background-color: #000;
 }
+/*-- Dark Button --*/
+#dark-btn {
+  position: absolute;
+  top: 38%;
+  right: 4%;
+  background: #ccc;
+  width: 2.8rem;
+  border-radius: 15px;
+  padding: 2px 3px;
+  cursor: pointer;
+  display: flex;
+  transition: padding-left 0.5s, background 0.5s;
+}
+#dark-btn span {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: white;
+  border-radius: 50%;
+}
+#dark-btn.dark-btn-on {
+  padding-left: 23px;
+  background: black;
+}
 /* Main */
 main {
   grid-area: main;
   display: flex;
   justify-content: center;
   gap: 4rem;
-  padding: 4rem 0;
+  padding: 9rem 0 4rem 0;
 }
 .profile-pic {
   width: 400px;
@@ -101,16 +145,17 @@ main {
 .profile-info .text-p1 {
   font-size: 1rem;
   font-weight: 600;
-  color: rgb(85, 85, 85);
+  color: var(--p-color);
 }
 .profile-info .title {
   font-size: 3rem;
+  color: var(--h-color);
 }
 .profile-info .text-p2 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: rgb(85, 85, 85);
+  color: var(--p-color);
 }
 .socials-container {
   display: flex;
@@ -120,20 +165,29 @@ main {
 }
 .socials-container button {
   font-weight: 600;
-  background: transparent;
-  border: 1px solid #000;
+  background: var(--body-color);
+  color: var(--h-color);
+  border: 1px solid var(--h-color);
   border-radius: 4rem;
   padding: 1rem;
   cursor: pointer;
   transition: 0.2s;
 }
 .socials-container button:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--h-color);
+  color: var(--body-color);
 }
 .socials-container img {
   width: 2.2rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+  background-color: var(--github-color);
+  border: 1px solid #fff;
+  border-radius: 50%;
   cursor: pointer;
+}
+.socials-container img:hover {
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 8);
 }
 .socials-container button {
   font-weight: 600;
@@ -141,12 +195,13 @@ main {
 /* About */
 #about {
   grid-area: about;
-  padding: 2rem 0;
+  padding: 6rem 0 4rem 0;
 }
 #about .title {
   font-size: 3rem;
   text-align: center;
   padding-bottom: 2rem;
+  color: var(--h-color);
 }
 .about-details-container {
   display: flex;
@@ -164,25 +219,32 @@ main {
   margin-bottom: 2rem;
   border-radius: 2rem;
   border: 1px solid gray;
+  background-color: var(--bg-color);
 }
 .details-container-2 img {
   width: 2rem;
 }
+.details-container-2 h3 {
+  color: var(--h-color);
+}
 .text-p1 {
   margin-top: 1rem;
+  color: var(--h-color);
 }
 .text-container {
   width: 300px;
+  color: var(--h-color);
 }
 /* Experience */
 #experience {
   grid-area: experience;
-  padding: 2rem 0;
+  padding: 6rem 0 4rem 0;
 }
 #experience .title {
   font-size: 3rem;
   text-align: center;
   padding-bottom: 2rem;
+  color: var(--h-color);
 }
 .exp-details-container {
   margin: 0 auto;
@@ -191,25 +253,28 @@ main {
   text-align: center;
   border: 1px solid gray;
   border-radius: 2rem;
+  background-color: var(--bg-color);
 }
 .exp-details-container .exp-title {
   font-size: 2rem;
-  color: rgb(85, 85, 85);
+  color: var(--p-color);
 }
 #experience .exp-details-container .details-container {
   display: flex;
   height: 30vh;
   flex-direction: column;
   justify-content: space-around;
+  color: var(--h-color);
 }
 /* Projects */
 #projects {
   grid-area: projects;
-  padding: 2rem 0;
+  padding: 6rem 0;
 }
 #projects .title {
   font-size: 3rem;
   text-align: center;
+  color: var(--h-color);
 }
 
 .projects-container {
@@ -222,11 +287,12 @@ main {
   padding: 2rem;
   box-sizing: border-box;
   border: 1px solid gray;
-  background: rgb(250, 250, 250);
+  background-color: var(--bg-color);
 }
 .project h4 {
   text-align: center;
   font-size: 2rem;
+  color: var(--h-color);
 }
 .project-img {
   width: 100%;
@@ -239,7 +305,7 @@ main {
   align-items: center;
 }
 .btn {
-  color: rgb(62, 59, 59);
+  color: var(--p-color);
   font-size: 1rem;
   font-weight: 600;
   padding: 1rem;
@@ -248,36 +314,43 @@ main {
   cursor: pointer;
 }
 .btn:hover {
-  color: black;
+  color: var(--h-color);
   transition: 0.2s;
 }
 
 /* Contact */
 #contact {
   grid-area: contact;
-  padding: 2rem;
+  padding: 4rem;
 }
 #contact .title {
   font-size: 3rem;
   text-align: center;
   padding-bottom: 2rem;
+  color: var(--h-color);
 }
 .contact-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
   width: 40%;
   margin: auto;
   padding: 2rem;
   border: 1px solid gray;
   border-radius: 4rem;
+  background-color: var(--bg-color);
 }
 .contact-container img {
   width: 2rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
+
 .contact-container a {
   text-decoration: none;
-  color: #000;
+  color: var(--h-color);
   font-size: 1.4rem;
 }
 /* Footer */
@@ -288,13 +361,14 @@ footer {
 }
 footer p {
   text-align: center;
+  color: var(--h-color);
 }
 footer a {
   position: absolute;
   right: 4rem;
   bottom: 2.8rem;
   text-decoration: none;
-  color: black;
+  color: var(--h-color);
   font-size: 1rem;
   font-weight: 600;
 }

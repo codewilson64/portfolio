@@ -1,4 +1,20 @@
+:root {
+  --body-color: #fff;
+  --bg-color: #fdfbfb;
+  --nav-color: #3e4f69;
+  --p-color: #5b5b5b;
+  --h-color: #000;
+}
+.dark-theme {
+  --body-color: #242424;
+  --bg-color: #3a3a3a;
+  --p-color: #fff;
+  --h-color: #fff;
+}
 @media (max-width: 1150px) {
+  nav {
+    justify-content: space-evenly;
+  }
   nav ul {
     width: 50%;
   }
@@ -10,8 +26,11 @@
   }
 }
 @media (max-width: 900px) {
+  nav {
+    justify-content: space-evenly;
+  }
   nav ul {
-    width: 60%;
+    width: 50%;
   }
   .contact-container {
     padding: 1.6rem;
@@ -22,6 +41,9 @@
   }
 }
 @media (max-width: 815px) {
+  nav {
+    justify-content: space-around;
+  }
   main {
     display: block;
   }
@@ -94,11 +116,18 @@
     flex-direction: column;
     justify-content: space-around;
     height: 50vh;
-    background-color: #fff;
+    background-color: var(--nav-color);
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transform: scaleY(0);
     transform-origin: top;
+    transition: 0.2s;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  nav ul li a:hover {
+    color: #fff;
     transition: 0.2s;
   }
   nav ul.active {
@@ -120,6 +149,9 @@
   }
 }
 @media (max-width: 576px) {
+  nav {
+    justify-content: space-around;
+  }
   /* Main */
   main {
     display: block;
