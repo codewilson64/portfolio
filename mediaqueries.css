@@ -18,6 +18,9 @@
   nav ul {
     width: 50%;
   }
+  .exp-details-container {
+    width: 50%;
+  }
   .contact-container {
     padding: 1.6rem;
   }
@@ -25,11 +28,14 @@
     font-size: 1.1rem;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 905px) {
   nav {
     justify-content: space-evenly;
   }
   nav ul {
+    width: 50%;
+  }
+  .exp-details-container {
     width: 50%;
   }
   .contact-container {
@@ -89,7 +95,7 @@
     margin-top: 2rem;
   }
   .exp-details-container {
-    width: 90%;
+    width: 70%;
   }
   .projects-container {
     display: block;

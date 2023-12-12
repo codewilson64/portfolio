@@ -261,10 +261,13 @@ main {
 }
 #experience .exp-details-container .details-container {
   display: flex;
+  align-items: center;
   height: 30vh;
-  flex-direction: column;
   justify-content: space-around;
   color: var(--h-color);
+}
+.exp-img {
+  width: 4rem;
 }
 /* Projects */
 #projects {
