@@ -212,8 +212,12 @@ main {
   width: 400px;
   border-radius: 2rem;
 }
+.about-img {
+  width: 10rem;
+}
 #about .about-details-container .details-container-2 {
-  width: 300px;
+  width: 250px;
+  height: 200px;
   text-align: center;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -259,14 +263,23 @@ main {
   font-size: 2rem;
   color: var(--p-color);
 }
-#experience .exp-details-container .details-container {
+#experience .exp-details-container .details-container-1 {
   display: flex;
   align-items: center;
   height: 30vh;
   justify-content: space-around;
   color: var(--h-color);
 }
-.exp-img {
+#experience .exp-details-container .details-container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.details-container-1 .exp-img {
+  width: 4rem;
+}
+.details-container-2 .exp-img {
   width: 4rem;
 }
 /* Projects */
@@ -279,7 +292,6 @@ main {
   text-align: center;
   color: var(--h-color);
 }
-
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

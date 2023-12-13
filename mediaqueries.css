@@ -47,21 +47,19 @@
   }
 }
 @media (max-width: 815px) {
+  html {
+    font-size: 80%;
+  }
   nav {
     justify-content: space-around;
   }
   main {
-    display: block;
+    padding: 12rem 0 7rem 0;
   }
-  main img {
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
+  .profile-pic {
+    width: 350px;
   }
-  .socials-container {
-    margin: auto;
-    width: 50%;
-  }
+
   .socials-container {
     display: flex;
     justify-content: center;
@@ -71,10 +69,12 @@
   .socials-container img {
     margin: 5px 0;
   }
+  /*---About---*/
   .about-details-container {
     display: block;
   }
   #about .about-details-container img {
+    width: 250px;
     display: block;
     margin: auto;
     margin-bottom: 2rem;
@@ -82,6 +82,9 @@
   #about .about-details-container .details-container-1 {
     width: 80%;
     margin: auto;
+  }
+  #about .about-details-container .details-container-2 img {
+    width: 30px;
   }
   #about .about-details-container .details-container-1 .details-container-2 {
     margin: auto;
@@ -94,6 +97,7 @@
     text-align: center;
     margin-top: 2rem;
   }
+  /*---Experience---*/
   .exp-details-container {
     width: 70%;
   }
@@ -154,18 +158,39 @@
     cursor: pointer;
   }
 }
+@media (max-width: 655px) {
+  .profile-pic {
+    width: 280px;
+  }
+}
 @media (max-width: 576px) {
+  html {
+    font-size: 85%;
+  }
   nav {
     justify-content: space-around;
+  }
+  nav ul {
+    top: 76px;
   }
   /* Main */
   main {
     display: block;
+    padding-top: 9rem;
   }
   main img {
     display: block;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+  .profile-pic {
+    width: 250px;
+  }
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
   .socials-container {
     margin: auto;
@@ -176,9 +201,13 @@
   }
   /* About */
   #about .about-details-container img {
+    width: 250px;
     display: block;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+  #about .about-details-container .details-container-2 img {
+    width: 30px;
   }
   #about .about-details-container .details-container-1 {
     width: 80%;
@@ -190,6 +219,9 @@
   .about-details-container {
     display: block;
   }
+  .about-img {
+    width: 2rem;
+  }
   .text-container {
     width: fit-content;
     text-align: center;
@@ -198,7 +230,7 @@
 
   /* Experience */
   .exp-details-container {
-    width: 90%;
+    width: 80%;
   }
   /* Projects */
   .projects-container {
