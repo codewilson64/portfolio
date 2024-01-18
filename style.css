@@ -314,10 +314,18 @@ main {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.project-tools {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  color: var(--h-color);
+  font-weight: 700;
+}
 .btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0.3rem;
 }
 .btn {
   color: var(--p-color);
